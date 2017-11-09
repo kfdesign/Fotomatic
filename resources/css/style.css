@@ -26,6 +26,8 @@ html {
 
 .image-container img {
   display: block;
+  margin: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -230,6 +232,10 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
+#features-section .feature .image-container img {
+  margin-bottom: 2.5rem;
+}
+
 .feature {
   flex: 1;
   padding: 2rem;
@@ -238,7 +244,7 @@ header .mobile {
 }
 
 .feature .image-container {
-  width: 90%;
+  /* width: 90%; */
   height: 65%;
   margin: 0 auto;
 }
@@ -305,6 +311,7 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  letter-spacing: 0.05rem;
 }
 
 #filters-section .images-container {
@@ -313,6 +320,7 @@ header .mobile {
   justify-content: center;
 }
 
+/* This short snippet of code (below) gave me such a hard time! */
 #filters-section .image-container img {
   margin: 0;
   width: 100%;
@@ -354,34 +362,34 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.875rem;
   line-height: 1.1;
-  font-style: italic;
+  /* font-style: italic; */
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -402,6 +410,7 @@ footer .content {
 }
 
 footer .copyright {
+  font-size: 0.75rem;
   flex-grow: 1;
 }
 
